@@ -22,8 +22,8 @@ The repository includes example tests and a simple local server to run the appli
    cd CypressGherkin
 
 2. **Create and activate a virtual environment:**
-```python3 -m venv venv
-source venv/bin/activate
+   ```python3 -m venv venv
+   source venv/bin/activate
 
 3. **Install dependencies:**
-```pip install selenium pytest
+   ```pip install selenium pytest

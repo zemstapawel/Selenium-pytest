@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Selenium PageObjects + OOP Test page</title>
+
+  <!-- Łączymy CSS (jeśli masz) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Twój własny JS -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h4>Selenium PageObjects + OOP Test page</h4>
+
+  <table border="1" cellpadding="5">
+    <tr>
+      <td><strong>Vehicle Data</strong></td>
+      <td><strong>Cloned Vehicle</strong></td>
+    </tr>
+    <tr>
+      <td>
+        <div id="model1">
+          <p><strong>Name </strong><input class="js-name" type="text" /></p>
+          <p><strong>Model </strong>
+            <select class="js-model">
+              <option value="">Select Model</option>
+              <option value="BMW">BMW</option>
+              <option value="Mazda">Mazda</option>
+            </select>
+          </p>
+          <p><strong>Year </strong><input class="js-year" type="text" /></p>
+        </div>
+      </td>
+      <td>
+        <div id="model2">
+          <p><strong>Name </strong><input readonly class="js-name" type="text" /></p>
+          <p><strong>Model </strong>
+            <select disabled class="js-model">
+              <option value=""></option>
+              <option value="BMW">BMW</option>
+              <option value="Mazda">Mazda</option>
+            </select>
+          </p>
+          <p><strong>Color </strong><input readonly class="js-color" type="text" /></p>
+          <p><strong>Year </strong><input readonly class="js-year" type="text" /></p>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <p><strong>New Vehicle Color </strong>
+    <select id="vehColor">
+      <option value="White">White</option>
+      <option value="Red">Red</option>
+      <option value="Blue">Blue</option>
+    </select>
+  </p>
+
+  <p><button id="cloneVehicle">Clone Vehicle with Color</button></p>
+</body>
+</html>
